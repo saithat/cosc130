@@ -1,0 +1,25 @@
+     addi  sp, sp, -64        // 0xfc010113
+     sd    ra, 0(sp)          // 0x00113023
+     sw    a0, 8(sp)          // 0x00a12423
+     sh    a1, 12(sp)         // 0x00b11623
+     sb    a2, 14(sp)         // 0x00c10723
+     add   a0, zero, t5       // 0x01e00533
+     xor   a0, t5, t2         // 0x007f4533
+     or    a5, s3, s2         // 0x0129e7b3
+     and   a3, s4, s1         // 0x009a76b3
+     andi  a5, a2, 3          // 0x00367793
+     srai  t2, t5, 6          // 0x406f5393
+     slli  t5, a1, 63         // 0x03f59f13
+     srl   a0, a1, a2         // 0x00c5d533
+     sub   a0, a2, a1         // 0x40b60533
+     jal   ra, -56            // 0xfc9ff0ef
+     jalr  ra, gp, 0          // 0x000180e7
+     lui   t5, 319455232      // 0x130a8f37
+     addiw t5, t2, 122        // 0x07a38f1b
+     addi  sp, sp, 64         // 0x04010113
+     sub   a0, a1, tp         // 0x40458533
+     ld    ra, -123(t0)       // 0xf852b083
+     lw    a0, -877(gp)       // 0xc931a503
+     lh    a1, -1024(a5)      // 0xc0079583
+     lb    a2, -1888(s7)      // 0x8a0b8603
+     jalr  zero, ra, 0        // 0x00008067
